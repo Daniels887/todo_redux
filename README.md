@@ -12,13 +12,15 @@
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [Commitizen](https://github.com/commitizen/cz-cli)
+- [Yup](https://github.com/jquense/yup)
+- [Styled-Components](https://styled-components.com/)
 
 ## :wrench: Configuration
 
 #### 1. Install all dependencies with
 
 ```sh
-$ npm install 
+$ npm install
 ```
 
 or using yarn
@@ -27,7 +29,7 @@ or using yarn
 $ yarn
 ```
 
-#### 2. Start the webpack-dev-server 
+#### 2. Start the webpack-dev-server
 
 ```sh
 $ npm run dev
@@ -66,10 +68,10 @@ $ yarn test:e2e:run
 ```
 
 #### :exclamation: If Cypress (yarn test:e2e) is still not installed after yarn. Install cypress with:
+
 ```sh
 $ npx cypress install
 ```
-
 
 #### 3. Run unit tests with
 
