@@ -14,6 +14,8 @@
 - [Commitizen](https://github.com/commitizen/cz-cli)
 - [Yup](https://github.com/jquense/yup)
 - [Styled-Components](https://styled-components.com/)
+- [Redux](https://redux.js.org/)
+- [Redux-persist](https://github.com/rt2zz/redux-persist)
 
 ## :wrench: Configuration
 
