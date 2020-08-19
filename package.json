@@ -33,6 +33,8 @@
     "@types/jest": "^26.0.8",
     "@types/react": "^16.9.44",
     "@types/react-dom": "^16.9.8",
+    "@types/react-redux": "^7.1.9",
+    "@types/redux-persist": "^4.3.1",
     "@typescript-eslint/eslint-plugin": "^3.8.0",
     "@typescript-eslint/parser": "^3.8.0",
     "babel-eslint": "^10.1.0",
@@ -71,9 +73,14 @@
     }
   },
   "dependencies": {
+    "@types/styled-components": "^5.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hot-loader": "^4.12.21",
-    "serve": "^11.3.2"
+    "react-redux": "^7.2.1",
+    "redux": "^4.0.5",
+    "redux-persist": "^6.0.0",
+    "serve": "^11.3.2",
+    "styled-components": "^5.1.1"
   }
 }
