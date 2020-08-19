@@ -1,45 +1,141 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+<h3 align="center">
+  <img src="https://user-images.githubusercontent.com/58083563/89603242-1845fa80-d83f-11ea-9ca1-3b6c3acb57ed.png" alt="Webpack" width="150" />&nbsp&nbsp&nbsp&nbsp
+  &nbsp
+  <img src="https://user-images.githubusercontent.com/58083563/89603440-87bbea00-d83f-11ea-88f1-40ded3561784.png" alt="Typescript" width="150" />
+  <img src="https://user-images.githubusercontent.com/58083563/89603314-3f9cc780-d83f-11ea-974a-82f2ed7ab879.png" alt="React" width="200" />
+</h3>
+<h3 align="center">Boilerplate - React + Typescript + Webpack</h3>
+<br>
+<p align="center">
+  <a href="#rocket-Technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#wrench-Configuration">Configuration</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#mag-Tests">Tests</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#gift-Others-commands">Others</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+## :rocket: Technologies
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+- [React](https://reactjs.org)
+- [Typescript](https://www.typescriptlang.org/)
+- [Webpack](https://webpack.js.org/)
+- [Babel](https://babeljs.io/)
+- [Storybook](https://storybook.js.org/)
+- [Jest](https://jestjs.io/)
+- [Cypress](https://www.cypress.io/)
+- [Eslint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [Commitizen](https://github.com/commitizen/cz-cli)
 
----
+## :wrench: Configuration
 
-## Edit a file
+#### 1. Install all dependencies with
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+```sh
+$ npm install 
+```
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+or using yarn
 
----
+```sh
+$ yarn
+```
 
-## Create a file
+#### 2. Start the webpack-dev-server 
 
-Next, you’ll add a new file to this repository.
+```sh
+$ npm run dev
+```
 
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
+or using yarn
 
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
+```sh
+$ yarn dev
+```
 
----
+## :mag: Tests
 
-## Clone a repository
+#### 1. Run e2e tests with
 
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
+```sh
+$ npm run test:e2e
+```
 
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
+or using yarn
 
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+```sh
+$ yarn test:e2e
+```
+
+#### 2. Run e2e tests in terminal with
+
+```
+$ npm run test:e2e:run
+```
+
+or using yarn
+
+```
+$ yarn test:e2e:run
+```
+
+#### :exclamation: If Cypress (yarn test:e2e) is still not installed after yarn. Install cypress with:
+```sh
+$ npx cypress install
+```
+
+
+#### 3. Run unit tests with
+
+```
+$ npm run test
+```
+
+or using yarn
+
+```
+$ yarn test
+```
+
+## :gift: Others commands
+
+```sh
+# Build for web (compiled to build/)
+$ npm run build
+
+# Run for web production (needs npm run build first)
+$ npm run start
+
+# Open storybook
+$ npm run storybook
+
+# Check Eslint errors
+$ npm run lint
+
+# Format all files with prettier
+$ npm run format
+
+# Commit using commitizen
+$ npm run commit
+```
+
+or using yarn
+
+```sh
+# Build for web (compiled to build/)
+$ yarn build
+
+# Run for web production (needs yarn build first)
+$ yarn start
+
+# Open storybook
+$ yarn storybook
+
+# Check Eslint errors
+$ yarn lint
+
+# Format all files with prettier
+$ yarn format
+
+# Commit using commitizen
+$ yarn commit
+```
