@@ -10,8 +10,8 @@ interface IProps {
 const List: React.FC<IProps> = ({ tasks }) => {
   return (
     <>
-      {tasks.map((task) => (
-        <Card task={task} key={task.id} />
+      {tasks.map((task, index) => (
+        <Card task={task} key={task.id} id={`${index}`} />
       ))}
     </>
   )

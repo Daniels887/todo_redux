@@ -6,17 +6,19 @@ import { useDispatch } from '../../../store'
 
 interface IProps {
   task: TaskState
+  id: string
 }
-const Card: React.FC<IProps> = ({ task }) => {
+const Card: React.FC<IProps> = ({ task, id }) => {
   const dispatch = useDispatch()
 
   return (
-    <Container>
+    <Container id={`card-${id}`}>
       <Title>{task.name}</Title>
       <Checkbox
         type="checkbox"
         checked={task.checked}
         onChange={() => dispatch(checkTask(task.id))}
+        id={`checkbox-${id}`}
       />
     </Container>
   )
