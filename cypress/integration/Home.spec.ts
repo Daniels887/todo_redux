@@ -16,4 +16,20 @@ describe('testing Home page', () => {
 
     cy.get('#checkbox-0').should('be.checked')
   })
+
+  it('should validate input with is required', () => {
+    cy.get('#button').click()
+
+    cy.get('#error').contains(/É necessário preencher o campo da tarefa./)
+  })
+
+  it('should validate input with min length of characters', () => {
+    cy.get('#task').type('a')
+
+    cy.get('#button').click()
+
+    cy.get('#error').contains(
+      /Nome da tarefa muito pequeno, o mínimo são 5 caracteres./
+    )
+  })
 })

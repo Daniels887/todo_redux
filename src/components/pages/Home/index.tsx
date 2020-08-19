@@ -51,7 +51,7 @@ const Home: React.FC = () => {
           }
           id="task"
         />
-        <Error>{error}</Error>
+        <Error id="error">{error}</Error>
         <Button onClick={() => handleSubmit()} id="button">
           Criar tarefa
         </Button>
