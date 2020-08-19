@@ -14,3 +14,13 @@ export const Form = styled.div`
   margin: 32px;
   width: 100%;
 `
+export const Title = styled.h1`
+  margin-top: 32px;
+  color: rgb(0, 0, 255);
+  font-size: 48px;
+`
+
+export const Error = styled.span`
+  color: red;
+  font-size: 12px;
+`

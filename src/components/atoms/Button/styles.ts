@@ -10,4 +10,5 @@ export const ButtonStyled = styled.button`
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s;
+  margin-top: 8px;
 `
