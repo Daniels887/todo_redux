@@ -6,6 +6,7 @@ import Input from '../../atoms/Input'
 import Button from '../../atoms/Button'
 import { useSelector, useDispatch } from '../../../store'
 import { addTask } from '../../../store/task'
+import List from '../../organisms/List'
 
 const Home: React.FC = () => {
   const tasks = useSelector((state) => state.tasks)
@@ -26,12 +27,13 @@ const Home: React.FC = () => {
           onChange={(e: { target: { value: React.SetStateAction<string> } }) =>
             setTask(e.target.value)
           }
+          id="task"
         />
-        <Button onClick={() => handleSubmit()}>Criar tarefa</Button>
+        <Button onClick={() => handleSubmit()} id="button">
+          Criar tarefa
+        </Button>
       </Form>
-      {tasks.map((task) => (
-        <h1>{task.name}</h1>
-      ))}
+      <List tasks={tasks} />
     </Container>
   )
 }

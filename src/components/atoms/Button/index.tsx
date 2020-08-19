@@ -5,10 +5,10 @@ import { ButtonStyled } from './styles'
 interface IProps {
   children?: ReactNode
   onClick?: any
+  id: string
 }
 const Input: React.FC<IProps> = (props) => {
-  console.log(props)
-  return <ButtonStyled onClick={props.onClick}>{props.children}</ButtonStyled>
+  return <ButtonStyled {...props}>{props.children}</ButtonStyled>
 }
 
 export default Input

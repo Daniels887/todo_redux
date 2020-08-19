@@ -7,6 +7,7 @@ interface IProps {
   type?: string
   value?: string
   onChange?: any
+  id: string
 }
 
 const Input: React.FC<IProps> = (props) => {
