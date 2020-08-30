@@ -1,4 +1,4 @@
-<h3>Teste avaliativo</h3>
+<h3 align="center">Teste avaliativo</h3>
 
 ## :rocket: Technologies
 
